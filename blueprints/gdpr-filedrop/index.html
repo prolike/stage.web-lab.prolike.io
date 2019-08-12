@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>https://stage.copenhagencoaching.dk</title>
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Custom styles for this template -->
+  <link href="/css/creative.css" rel="stylesheet">
+
+
+
+</head>
+
+  <body id="page-top">
+          <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/#page-top">Prolike</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#butwhy">Why?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#services">How?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#portfolio">What?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/blueprints">Blue prints</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container my-auto" style="padding-top: 6em;">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1>
+            GDPR File Drop
+          </h1>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="kicker">A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server.</p>
+
+<h2 id="problem">Problem</h2>
+
+<p>Files that contains sensitive data must be handled in accordance with GDPR compliancy.</p>
+
+<p>The client does not want to handle these file through their ordinay email system. Instead they which to have self-contained, seperate solution for handling files that potentially contains sensitive data.</p>
+
+<p>Files must be handled through a secure protocol.</p>
+
+<h2 id="features">Features</h2>
+
+<p>The client wants a dropbox-like feature where the up- and download of files to and from clients and partners happens through an easy troubleless interface.</p>
+
+<p>The following two use cases are described by the client:</p>
+
+<h3 id="use-case-1---employee-sends-file-to-external-partner">Use case 1 - employee sends file to external partner</h3>
+
+<p>The client’s employee uploads a file through a web interface, the act may potentially include a login.</p>
+
+<p>The intended reciver will get an automated notification via email, containing a download-link which is only valid for a limited amount of time</p>
+
+<h3 id="use-case-2---ekstern-partner-uploads-file-to-client">Use case 2 - ekstern partner uploads file to client</h3>
+
+<p>The external partner or client has login-free access to a web interface. The files are dragged and dropped on the interface. In the process the external partner will fill in a few properties like, sender, project, case ID.</p>
+
+<p>The attributes will be selected from dropdown boxes to enable files to be consistenly categorized.</p>
+
+<p>An alternative to this use case could be, that the client employee will generate a unique upload-URL for the external pertner to use, with the necessary properties pre-filled.</p>
+
+<p>In any case, the client employee involved in ther partner transaction, will get a notification on email, when a file is recieved.</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>The suggested solution is based on the Open Source project <a href="http://www.youtransfer.io/" target="_blank">youtransfer.io</a> - source code is available from
+<a href="https://github.com/YouTransfer/YouTransfer" target="_blank"><code class="highlighter-rouge">YouTransfer/YouTransfer</code></a> at GitHub. The project is written in node.js and JavaScript. It will be hosted using a Docker container, either on the clients own premises or in a public cloud (most likely Azure).</p>
+
+<p>The first task is to get the YouTransfer system up and running securely and orchestrated in the client’s context, the following tasks will be focusing on extending the features to support, notification, properties, time constraints etc.</p>
+
+<p>The project is managed my the client.</p>
+
+<h2 id="value">Value</h2>
+
+<p>The value to the client is that files that needs to be handled in accordance with GDPR compliancy never enters into their email systems as attachments.</p>
+
+<h2 id="technology-stack">Technology stack</h2>
+<p>Node.js, JavaScript, Less/Sass, Gulp, Docker, Travis CI, Git/GitHub, Karma (test runnner).</p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Plugin JavaScript -->
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+    <!-- Custom scripts for this template -->
+<script src="/js/creative.min.js"></script>
+
+
+
+  </body>
+
+</html>
